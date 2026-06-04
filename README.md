@@ -20,7 +20,7 @@ $: stack(
     .struct("<x x*2 x x?>").humanize()
     .sound("gm_slap_bass_1").velocity(0.25),
     sound("bd/8").bank("RolandTR808"),
-    sound("<- sd - sd*2>").humanize().bank("RolandTR808"),
+    sound("<- [sd:0:.6,cp:0:.2] - [sd:0:.6,cp:0:.2]*2>").humanize().bank("RolandTR808"),
     sound("[- <- oh*2>]").bank("RolandTR808"),
     sound("[hh hh hh hh]").humanize().degradeBy("0.25".fast(4)).bank("RolandTR808")
   )
