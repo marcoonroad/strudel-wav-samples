@@ -1,5 +1,19 @@
 {
     "_base":"https://raw.githubusercontent.com/marcoonroad/strudel-wav-samples/master/",
+    "supersaws": [
+        "supersaws/01.wav",
+        "supersaws/02.wav",
+        "supersaws/03.wav",
+        "supersaws/04.wav",
+        "supersaws/05.wav",
+        "supersaws/06.wav"
+    ],
+    "supersquares": [
+        "supersquares/01.wav"
+    ],
+    "cowbells": [
+        "cowbells/01.wav"
+    ],
     "backspins": [
         "backspins/01.wav",
         "backspins/02.wav",
