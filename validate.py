@@ -3,6 +3,7 @@
 import os
 import json
 import sys
+from detect import detect_pitch_note
 from pathlib import Path
 
 def main():
@@ -23,6 +24,8 @@ def main():
                     found[ str(item.name) ].append(str(Path(item.name) / file).replace("\\", "/"))
     with open("strudel.json", "rt", encoding="utf-8") as handler:
         spec: dict = json.load(handler)
+        print("WAV file | Detected note | Detected pitch")
+        print("-------- | ------------- | --------------")
         for key, value in spec.items():
             if key == "_base":
                 continue
@@ -34,6 +37,16 @@ def main():
             for index in range(len(value)):
                 if value[index] != found[key][index]:
                     raise Exception(message)
+                detection = detect_pitch_note(value[index])
+                if detection is None:
+                    continue
+                (detected_note, detected_pitch) = detection
+                # if detected_note == "C3":
+                #    continue
+                detected_note = detected_note.replace("♯", "#")
+                if not value[index].endswith(detected_note + ".wav"):
+                    raise Exception("File " + value[index] + " must specify and end with note " + detected_note + ".wav")
+                print(f"{value[index]} | {detected_note} | {detected_pitch:.2f}Hz")
 
 if __name__ == "__main__":
     main()

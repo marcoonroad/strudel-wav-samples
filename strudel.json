@@ -1,32 +1,32 @@
 {
     "_base":"https://raw.githubusercontent.com/marcoonroad/strudel-wav-samples/master/",
     "supersaws": [
-        "supersaws/01.wav",
-        "supersaws/02.wav",
-        "supersaws/03.wav",
-        "supersaws/04.wav",
-        "supersaws/05.wav",
-        "supersaws/06.wav"
+        "supersaws/01 D#4.wav",
+        "supersaws/02 C#4.wav",
+        "supersaws/03 C4.wav",
+        "supersaws/04 D4.wav",
+        "supersaws/05 E5.wav",
+        "supersaws/06 D5.wav"
     ],
     "supersquares": [
-        "supersquares/01.wav"
+        "supersquares/01 G#3.wav"
     ],
     "cowbells": [
-        "cowbells/01.wav"
+        "cowbells/01 A5.wav"
     ],
     "backspins": [
-        "backspins/01.wav",
-        "backspins/02.wav",
-        "backspins/03.wav",
-        "backspins/04.wav",
-        "backspins/05.wav",
-        "backspins/06.wav",
-        "backspins/07.wav",
-        "backspins/08.wav",
-        "backspins/09.wav",
-        "backspins/10.wav",
-        "backspins/11.wav",
-        "backspins/12.wav",
-        "backspins/13.wav"
+        "backspins/01 B4.wav",
+        "backspins/02 E5.wav",
+        "backspins/03 G5.wav",
+        "backspins/04 C5.wav",
+        "backspins/05 A6.wav",
+        "backspins/06 A6.wav",
+        "backspins/07 G#7.wav",
+        "backspins/08 C2.wav",
+        "backspins/09 E4.wav",
+        "backspins/10 A3.wav",
+        "backspins/11 D#3.wav",
+        "backspins/12 A#3.wav",
+        "backspins/13 F3.wav"
     ]
 }

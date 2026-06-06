@@ -39,6 +39,40 @@ $: stack(
   .pianoroll({ labels: 1 })
 ```
 
+### Tips & Tricks
+
+For the plucks/percussion instruments, it's not needed, but due being samples loaded fully, most sounds here need
+a `.clip(1)` / `.legato(1)` to stop playing once the pattern note finishes, otherwise a lot of note sounds would be mixed,
+phased and cancelled, with the sound sounding heavily metallic like a guitar.
+
+Also, I did not apply any loudness normalization for this set of samples, it's recommended to initially load and play such samples with `.velocity(0.5)`, just to avoid some sudden huge bumps higher than other instruments played along.
+
+### Instruments Tunings
+
+WAV file | Detected note | Detected pitch
+-------- | ------------- | --------------
+supersaws/01 D#4.wav | D#4 | 312.90Hz
+supersaws/02 C#4.wav | C#4 | 278.23Hz
+supersaws/03 C4.wav | C4 | 261.85Hz
+supersaws/04 D4.wav | D4 | 289.44Hz
+supersaws/05 E5.wav | E5 | 648.41Hz
+supersaws/06 D5.wav | D5 | 579.99Hz
+supersquares/01 G#3.wav | G#3 | 209.14Hz
+cowbells/01 A5.wav | A5 | 855.09Hz
+backspins/01 B4.wav | B4 | 482.00Hz
+backspins/02 E5.wav | E5 | 667.52Hz
+backspins/03 G5.wav | G5 | 785.60Hz
+backspins/04 C5.wav | C5 | 529.52Hz
+backspins/05 A6.wav | A6 | 1726.05Hz
+backspins/06 A6.wav | A6 | 1759.62Hz
+backspins/07 G#7.wav | G#7 | 3358.02Hz
+backspins/08 C2.wav | C2 | 66.60Hz
+backspins/09 E4.wav | E4 | 336.42Hz
+backspins/10 A3.wav | A3 | 222.29Hz
+backspins/11 D#3.wav | D#3 | 156.20Hz
+backspins/12 A#3.wav | A#3 | 228.88Hz
+backspins/13 F3.wav | F3 | 174.87Hz
+
 ### Credits
 
 WAV files retrieved from:
