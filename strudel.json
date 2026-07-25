@@ -1,5 +1,9 @@
 {
     "_base":"https://raw.githubusercontent.com/marcoonroad/strudel-wav-samples/master/",
+    "electroclash_vox": [
+        "electroclash_vox/0.wav",
+        "electroclash_vox/1.wav"
+    ],
     "supersaws": [
         "supersaws/01 D#4.wav",
         "supersaws/02 C#4.wav",
