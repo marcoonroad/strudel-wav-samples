@@ -1,5 +1,13 @@
 {
     "_base":"https://raw.githubusercontent.com/marcoonroad/strudel-wav-samples/master/",
+    "dnb_breaks": [
+        "dnb_breaks/01.wav",
+        "dnb_breaks/02.wav",
+        "dnb_breaks/03.wav",
+        "dnb_breaks/04.wav",
+        "dnb_breaks/05.wav",
+        "dnb_breaks/06.wav"
+    ],
     "electroclash_vox": [
         "electroclash_vox/0.wav",
         "electroclash_vox/1.wav"
