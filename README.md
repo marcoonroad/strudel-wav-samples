@@ -83,3 +83,5 @@ WAV files retrieved from:
 - `supersaws/`: created with Sox CLI tool or extracted from SF2/SFZ free soundfiles
 - `supersquares/`: extracted from free SF2/SFZ soundfiles
 - `cowbells/`: extracted from free SF2/SFZ soundfiles
+- `electroclash_vox/`: personal espeak synthetic voices (post-processed with SoX and FFmpeg)
+- `dnb_breaks/`: syncopated breakcore samples at 175 BPM, 4-bar loop and 4/4 time signature
