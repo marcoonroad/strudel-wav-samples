@@ -5,7 +5,7 @@
 ```javascript
 setcpm(105)
 
-samples('github:marcoonroad/strudel-wav-samples')
+await samples('github:marcoonroad/strudel-wav-samples')
 
 $: sound("backspins:0/2")
   .mask("<0 0 [0!6 1!2] 0>/8")
@@ -19,6 +19,7 @@ register('pitchBend', (semitones, pattern) =>
 
 register('humanize', pattern =>
   pattern.clip(rand.range(0.75, 1.0)))
+  // NOTE: we could also phase/swing a bit with .compress(START_FLOAT_PERCENT, END_FLOAT_PERCENT)
 
 $: stack(
     note("d#2 | f#2 | d#2 | g#2 | d#2 | c#2 | e2 | d#2".sub(9))
