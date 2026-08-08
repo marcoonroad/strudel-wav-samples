@@ -7,7 +7,7 @@ from detect import detect_pitch_note
 from pathlib import Path
 
 def main():
-    ignore = {'.git', 'electroclash_vox', 'dnb_breaks', 'node_modules', 'bin', 'obj', '.vs', '.venv', 'venv', '__pycache__', 'packages', 'TRASH'}
+    ignore = {'.git', 'electroclash_vox', 'amenlike', 'dnb_breaks', 'node_modules', 'bin', 'obj', '.vs', '.venv', 'venv', '__pycache__', 'packages', 'TRASH'}
     root = Path.cwd()
     found = {}
     for item in root.iterdir():
