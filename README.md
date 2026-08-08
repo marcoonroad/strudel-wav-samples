@@ -88,3 +88,22 @@ WAV files retrieved from:
 - `cowbells/`: extracted from free SF2/SFZ soundfiles
 - `electroclash_vox/`: personal espeak synthetic voices (post-processed with SoX and FFmpeg)
 - `dnb_breaks/`: syncopated breakcore samples at 175 BPM, 4-bar loop and 4/4 time signature
+- `amenlike/`: replicated amen breaks pattern using Roland TR drum machines (606 upto 909), see below
+
+### Notes for Amen-like Breaks
+
+For almost clean "amen break" samples, refer to "amenlike" directory, in which includes samples replicating the amen-break in different Roland TR drum machines:
+
+- `0.wav` - Roland TR-606
+- `1.wav` - Roland TR-707
+- `2.wav` - Roland TR-808 (and distorted kicks+snares)
+- `3.wav` - Roland TR-909
+
+The format of the breaks are in 120 BPM and follow the structure (with some using `sh`akers instead of `hh`ats):
+
+```
+----------------|----------------|----------------|----------C-----
+H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-
+----S--s-s--S---|----S--s-s--S---|-----s-s------S-|----S--s-s----S-
+K-K-------kK----|K-K-------kK----|K-K-----K-------|--kK------------
+```
