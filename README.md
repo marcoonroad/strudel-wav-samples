@@ -47,6 +47,8 @@ phased and cancelled, with the sound sounding heavily metallic like a guitar.
 
 Also, I did not apply any loudness normalization for this set of samples, it's recommended to initially load and play such samples with `.velocity(0.5)`, just to avoid some sudden huge bumps higher than other instruments played along.
 
+For the DnB breaks, they are not "clean" and yet made of TR909 drum machines (mostly) than acoustic drum sets, so, while sampling (slicing) random pieces (start points of playbacks) of the provided WAV samples, provide some EQ Filters like High-Pass or Band-Pass, so the long kick tail is not interleaved on groove/low frequencies, otherwise it would be bumping by accident heavily a sine-like sound like it was applied a guitar pedal effect (such as flanger/phaser) - if possible, force a cut/short-release as well, to avoid phasing high-frequencies (crashes, cymbals, rides, hats, claps, etc), for instance, something akin to `.clip(0.999).release(0.001)` in Strudel context.
+
 ### Instruments Tunings
 
 WAV file | Detected note | Detected pitch
