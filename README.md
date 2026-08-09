@@ -98,14 +98,26 @@ For almost clean "amen break" samples, refer to "amenlike" directory, in which i
 - `1.wav` and `5.wav` - Roland TR-707, punk-like sound
 - `2.wav` and `6.wav` - Roland TR-808 (and distorted kicks+snares), jungle-like sound
 - `3.wav` and `7.wav` - Roland TR-909, dubstep-like sound
+- `8.wav` - acoustic-closer version using vintage "akailinn" drum machine
+- `9.wav` - acoustic-closer version using vintage "OberheimDMX" drum machine
+- `10.wav` - acoustic-closer version using vintage "AlesisSR16" drum machine
 
 The tempo of the breaks are in 120 BPM and follow the structure below (with some using `sh`akers instead of `hh`ats):
 
 ```
-----------------|----------------|----------------|----------C-----
-H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-
-----S--s-s--S---|----S--s-s--S---|-----s-s------S-|----S--s-s----S-
-K-K-------kK----|K-K-------kK----|K-K-----K-------|--kK------------
+|----------------|----------------|----------------|----------C-----|
+|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|
+|----S--s-s--S---|----S--s-s--S---|-----s-s------S-|----S--s-s----S-|
+|K-K-------kK----|K-K-------kK----|K-K-----K-------|--kK------------|
+```
+
+**Update:** the most closer beat pattern has more ghost (o) notes (patched on samples index 8+):
+
+```
+|----------------|----------------|----------------|----------C-----|
+|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|H-H-H-H-H-H-H-H-|
+|----S--s-s--S--s|----S--s-s--S-s-|--S--s-s-----S--|-s--S--s-s----S-|
+|K-K----o--kK----|K-K----o--kK----|K-K-----K-------|--kK------K-----|
 ```
 
 Example of usage:
@@ -117,7 +129,7 @@ await samples('github:yaxu/clean-breaks');
 
 setcpm(180/4);
 
-$: sound("<amen amenlike:3 riffin funkydrummer>/4")
+$: sound("<amen amenlike:8 riffin funkydrummer>/4")
 .splice(16, "<6 8 1 3 11 14 2 7>".fast("<4 4 8 8>/4"))
 .lpf(5000)
 .hpf(100)
