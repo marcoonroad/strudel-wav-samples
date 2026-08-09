@@ -94,12 +94,12 @@ WAV files retrieved from:
 
 For almost clean "amen break" samples, refer to "amenlike" directory, in which includes samples replicating the amen-break in different Roland TR drum machines:
 
-- `0.wav` - Roland TR-606
-- `1.wav` - Roland TR-707, punk-like sound
-- `2.wav` - Roland TR-808 (and distorted kicks+snares), jungle-like sound
-- `3.wav` - Roland TR-909, dubstep-like sound
+- `0.wav` and `4.wav` - Roland TR-606
+- `1.wav` and `5.wav` - Roland TR-707, punk-like sound
+- `2.wav` and `6.wav` - Roland TR-808 (and distorted kicks+snares), jungle-like sound
+- `3.wav` and `7.wav` - Roland TR-909, dubstep-like sound
 
-The format of the breaks are in 120 BPM and follow the structure (with some using `sh`akers instead of `hh`ats):
+The tempo of the breaks are in 120 BPM and follow the structure below (with some using `sh`akers instead of `hh`ats):
 
 ```
 ----------------|----------------|----------------|----------C-----
@@ -117,8 +117,8 @@ await samples('github:yaxu/clean-breaks');
 
 setcpm(180/4);
 
-$: sound("<amen amenlike:3 riffin>/4")
-.splice(16, "<6 8 1 3 11 14 2 7>".fast("<4 4 8 >/4"))
+$: sound("<amen amenlike:3 riffin funkydrummer>/4")
+.splice(16, "<6 8 1 3 11 14 2 7>".fast("<4 4 8 8>/4"))
 .lpf(5000)
 .hpf(100)
 ._pianoroll();
