@@ -14,6 +14,14 @@
         "electroclash_vox/0.wav",
         "electroclash_vox/1.wav"
     ],
+    "reese_bassline": [
+        "reese_bassline/01 D#3.wav",
+        "reese_bassline/02 E2.wav"
+    ],
+    "growl_bassline": [
+        "growl_bassline/01 D6.wav",
+        "growl_bassline/02 B6.wav"
+    ],
     "amenlike": [
         "amenlike/0.wav",
         "amenlike/1.wav",

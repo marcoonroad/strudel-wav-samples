@@ -80,6 +80,8 @@ backspins/13 F3.wav | F3 | 174.87Hz
 
 WAV files retrieved from:
 
+- `reese_bassline/`: reese-like basslines (Drum 'n' Bass) that I exported with Strudel REPL
+- `growl_bassline/`: growl-like basslines (Dubstep) that I exported with Strudel REPL
 - `backspins/` (a.k.a spinbacks):
   + Thread: https://www.reddit.com/r/edmproduction/comments/7ojge8/i_made_some_backspin_samples_for_you/
   + Drive: https://drive.google.com/drive/folders/1A3hoQhpYkVq2ARXp9jJzwtK61iZ_ybOB

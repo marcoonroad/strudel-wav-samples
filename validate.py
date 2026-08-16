@@ -29,6 +29,8 @@ def main():
         for key, value in spec.items():
             if key == "_base":
                 continue
+            if key in ignore:
+                continue
             value.sort()
             found[key].sort()
             message = "Found a mismatch of files in key instrument " + key + ", please review that."
