@@ -54,6 +54,10 @@ For the DnB breaks, they are not "clean" and yet made of TR909 drum machines (mo
 
 WAV file | Detected note | Detected pitch
 -------- | ------------- | --------------
+reese_bassline/01 D#3.wav | D#3 | 157.83Hz
+reese_bassline/02 E2.wav | E2 | 82.20Hz
+growl_bassline/01 D6.wav | D6 | 1155.18Hz
+growl_bassline/02 B6.wav | B6 | 2022.61Hz
 supersaws/01 D#4.wav | D#4 | 312.90Hz
 supersaws/02 C#4.wav | C#4 | 278.23Hz
 supersaws/03 C4.wav | C4 | 261.85Hz
