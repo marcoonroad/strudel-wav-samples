@@ -107,8 +107,8 @@ For almost clean "amen break" samples, refer to "amenlike" directory, in which i
 - `8.wav` - acoustic-closer version using vintage "akailinn" drum machine
 - `9.wav` - acoustic-closer version using vintage "OberheimDMX" drum machine
 - `10.wav` - acoustic-closer version using vintage "AlesisSR16" drum machine
-- `11.wav` - MIDI-synthesized using FluidSynth R3 soundfont (SF2), slightly swinged & 136 BPM
-- `12.wav` - MIDI-synthesized using GeneralUser GS soundfont (SF2), slightly swinged & 136 BPM
+- `11.wav` - MIDI-synthesized using FluidSynth R3 soundfont (SF2), with slightly swinged offsets
+- `12.wav` - MIDI-synthesized using GeneralUser GS soundfont (SF2), with slightly swinged offsets
 
 The tempo of the breaks are in 120 BPM and follow the structure below (with some using `sh`akers instead of `hh`ats):
 
