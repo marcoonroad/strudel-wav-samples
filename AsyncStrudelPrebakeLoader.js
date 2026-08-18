@@ -9,7 +9,7 @@
 //   THAT IS, THEIR CODE WON'T EVER CHANGE AGAIN, AVOID USING RELATIVE
 //   VERSION TAGS LIKE latest AND SORT OF THAT -- YOU'VE BEEN WARNED --
 
-var prebakeLoader = (async function () {
+var prebakeLoader = async function () {
     const response = await fetch('https://unpkg.com/spadille@0.0.3/dist/index.js')
     const script = await response.text()
     const loader = new Function(script + ';return spadille;')
@@ -113,4 +113,4 @@ var prebakeLoader = (async function () {
     return {
         breakGen,
     }
-})
+}
