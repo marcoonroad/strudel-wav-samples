@@ -40,6 +40,18 @@ $: stack(
   .pianoroll({ labels: 1 })
 ```
 
+For the usage of the `AsyncStrudelPrebakeLoader.js` file, please refer to the Gist example as found at:
+https://gist.github.com/marcoonroad/856ff88b5f5878be4c98353038249a55
+
+This asynchronous (with await) prebake file is mostly used to generate randomly yet seeded/deterministic
+(so chaotic-like) a set of breakcore patterns, both on slices and with some slightly syncopated/swinged
+points (stereo pan between 40% ... 60%, relative velocity/gain between 90% ... 100% and some drifted
+offsets by 0% ... 4% on compress).
+
+**DISCLAIMER:** Due the usage of fetch+eval (function) on asynchronous prebake, you should avoid replicating
+that pattern on external scripts, unless you trust the code, e.g, you did made the external code (and hosted)
+on your own (or evaluated properly the risks).
+
 ### Tips & Tricks
 
 For the plucks/percussion instruments, it's not needed, but due being samples loaded fully, most sounds here need
