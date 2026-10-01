@@ -5,6 +5,15 @@ therefore, might introduce some breaking changes if you did previously sampled t
 October 2026), if that's your case, please refer to the branch `legacy-v0` for the non-normalized WAV samples,
 or adjust the loading of such WAV files assuming the standard 16-bits 44.1k Hz format.
 
+## Sections
+
+- Example of Usage
+- Tips & Tricks
+- Instruments Tunings
+- Credits
+- Notes for Gabber Kicks
+- Notes for Amen-like Breaks
+
 ### Example of Usage
 
 ```javascript
@@ -108,6 +117,7 @@ backspins/13 F3.wav | F3 | 174.87Hz
 
 WAV files retrieved from:
 
+- `gabber_kicks/`: the famous distorted hardcore techno kicks that I exported with Strudel REPL
 - `reese_bassline/`: reese-like basslines (Drum 'n' Bass) that I exported with Strudel REPL
 - `growl_bassline/`: growl-like basslines (Dubstep) that I exported with Strudel REPL
 - `backspins/` (a.k.a spinbacks):
@@ -132,11 +142,11 @@ With the total sample length of 8 seconds, so it means that if you want a single
 interleaved), you must slice only the first second of the samples, that's (in Strudel notation):
 
 ```javascript
+await samples('github:marcoonroad/strudel-wav-samples')
 // NOTE: slice the kicks sample in 8 pieces, then take only the first repeated 8 times (cycled by
 // 4 beats), also, regarding this line below, it plays 4 times the kick 0 and then 4 times the kick 1
 $: sound("gabber_kicks".n("<0 1>/2")).splice(8, "[0!8]/4").scope().fast(2)
 ```
-
 
 ### Notes for Amen-like Breaks
 
