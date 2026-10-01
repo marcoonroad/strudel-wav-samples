@@ -14,6 +14,12 @@
         "electroclash_vox/0.wav",
         "electroclash_vox/1.wav"
     ],
+    "gabber_kicks": [
+        "gabber_kicks/01 G#3.wav",
+        "gabber_kicks/02 B3.wav",
+        "gabber_kicks/03 A4.wav",
+        "gabber_kicks/04 C5.wav"
+    ],
     "reese_bassline": [
         "reese_bassline/01 D#3.wav",
         "reese_bassline/02 E2.wav",

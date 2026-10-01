@@ -1,5 +1,10 @@
 # Strudel WAV Samples
 
+**Important note:** The WAV samples in this project were all normalized to PCM 16-bits 44.1k Hz, and
+therefore, might introduce some breaking changes if you did previously sampled this project (mostly prior
+October 2026), if that's your case, please refer to the branch `legacy-v0` for the non-normalized WAV samples,
+or adjust the loading of such WAV files assuming the standard 16-bits 44.1k Hz format.
+
 ### Example of Usage
 
 ```javascript
@@ -66,6 +71,10 @@ For the DnB breaks, they are not "clean" and yet made of TR909 drum machines (mo
 
 WAV file | Detected note | Detected pitch
 -------- | ------------- | --------------
+gabber_kicks/01 G#3.wav | G#3 | 208.62Hz
+gabber_kicks/02 B3.wav | B3 | 253.71Hz
+gabber_kicks/03 A4.wav | A4 | 441.23Hz
+gabber_kicks/04 C5.wav | C5 | 521.89Hz
 reese_bassline/01 D#3.wav | D#3 | 157.83Hz
 reese_bassline/02 E2.wav | E2 | 82.20Hz
 reese_bassline/03 C4.wav | C4 | 258.91Hz
@@ -73,18 +82,18 @@ reese_bassline/04 F3.wav | F3 | 170.03Hz
 reese_bassline/05 E1.wav | E1 | 40.20Hz
 growl_bassline/01 D6.wav | D6 | 1155.18Hz
 growl_bassline/02 B6.wav | B6 | 2022.61Hz
-supersaws/01 D#4.wav | D#4 | 312.90Hz
-supersaws/02 C#4.wav | C#4 | 278.23Hz
+supersaws/01 D#4.wav | D#4 | 314.07Hz
+supersaws/02 C#4.wav | C#4 | 278.13Hz
 supersaws/03 C4.wav | C4 | 261.85Hz
-supersaws/04 D4.wav | D4 | 289.44Hz
+supersaws/04 D4.wav | D4 | 291.50Hz
 supersaws/05 E5.wav | E5 | 648.41Hz
 supersaws/06 D5.wav | D5 | 579.99Hz
-supersquares/01 G#3.wav | G#3 | 209.14Hz
-cowbells/01 A5.wav | A5 | 855.09Hz
+supersquares/01 G#3.wav | G#3 | 210.69Hz
+cowbells/01 A5.wav | A5 | 856.48Hz
 backspins/01 B4.wav | B4 | 482.00Hz
 backspins/02 E5.wav | E5 | 667.52Hz
 backspins/03 G5.wav | G5 | 785.60Hz
-backspins/04 C5.wav | C5 | 529.52Hz
+backspins/04 C5.wav | C5 | 529.51Hz
 backspins/05 A6.wav | A6 | 1726.05Hz
 backspins/06 A6.wav | A6 | 1759.62Hz
 backspins/07 G#7.wav | G#7 | 3358.02Hz
@@ -110,6 +119,24 @@ WAV files retrieved from:
 - `electroclash_vox/`: personal espeak synthetic voices (post-processed with SoX and FFmpeg)
 - `dnb_breaks/`: syncopated breakcore samples at 175 BPM, 4-bar loop and 4/4 time signature
 - `amenlike/`: replicated amen breaks pattern using Roland TR drum machines (606 upto 909), see below
+
+### Notes for Gabber Kicks (Hardtekk / Dubstep)
+
+The samples in such directory are compiled under 120 BPM and 4/4 time signature, but played in the following structure:
+
+| Gabber Kicks | Beat 1 | Beat 2 | Beat 3 | Beat 4 |
+| ------------ | ------ | ------ | ------ | ------ |
+| Repetitions  | 2      | 4      | 8      | 16     |
+
+With the total sample length of 8 seconds, so it means that if you want a single kick beat (that would not be
+interleaved), you must slice only the first second of the samples, that's (in Strudel notation):
+
+```javascript
+// NOTE: slice the kicks sample in 8 pieces, then take only the first repeated 8 times (cycled by
+// 4 beats), also, regarding this line below, it plays 4 times the kick 0 and then 4 times the kick 1
+$: sound("gabber_kicks".n("<0 1>/2")).splice(8, "[0!8]/4").scope().fast(2)
+```
+
 
 ### Notes for Amen-like Breaks
 
